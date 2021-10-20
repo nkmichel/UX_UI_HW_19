@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  background-color: #fff2f3;
+}
+.navbar {
+  background-color: #04c9a5;
+}
+.figure {
+  align-self: auto;
+  text-align: center;
+  justify-content: center;
+}
+img {
+  width: 33%;
+  margin: 10px;
+  padding: 10px;
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+button {
+  background-color: #04c9a5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+h1 {
+  padding: 0px 7px;
+  font-family: playfair display, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #3d405b;
+  font-size: xx-large;
+  text-align: center;
+}
+element.style {
+  width: 100%;
+}
+.container img {
+  display: none;
+}
+.container p {
+  display: none;
+}
+.container {
+  background-color: #ffd0d3;
+  padding: 60px 30px;
+}
+.container h3 p {
+  font-family: playfair display, Helvetica, sans-serif;
+}
+p {
+  width: 33%;
+  margin: 10px;
+  padding: 10px;
+  font-family: playfair display, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #3d405b;
+}
+.myWork h3 {
+  background-color: #04c9a5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-family: playfair display, Helvetica, sans-serif;
+  align-self: center;
+}
+.card-deck img {
+  width: 200px;
+  height: auto;
+}
+.card-deck {
+  background-color: lightcoral;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.card-body {
+  background-color: #04c9a5;
+}
+.card {
+  width: 400px;
+  height: auto;
+}
+div .myWork {
+  font-family: playfair display, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #3d405b;
+}
+
+.myWork .projectOne {
+  grid-area: projectOne;
+}
+.myWork .projectTwo {
+  grid-area: projectTwo;
+}
+.workGrid .projectInfoone {
+  grid-area: projectInfoone;
+
+  display: inline-block;
+  padding: 3px;
+  font-family: playfair display, Helvetica, sans-serif;
+  text-decoration: none;
+  color: aliceblue;
+}
+.projectInfoone p {
+  font-family: playfair display, Helvetica, sans-serif;
+  text-decoration: none;
+  color: aliceblue;
+}
+.projectInfotwo p {
+  font-family: playfair display, Helvetica, sans-serif;
+  text-decoration: none;
+  color: aliceblue;
+}
+.workGrid .projectInfotwo {
+  grid-area: projectInfotwo;
+  display: inline-block;
+  padding: 3px;
+}
+.workGrid h3 {
+  grid-area: h3;
+}
+@media only screen and (max-width: 600px) {
+  .myWork {
+    width: 100%;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .workGrid {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1 fr 1fr;
+    grid-template-areas:
+      "projectOne"
+      "projectInfoone"
+      "projectTwo"
+      "projectInfotwo"
+      "h3";
+  }
+}
