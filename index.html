@@ -1,4 +1,4 @@
-+<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     
@@ -9,21 +9,14 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <title>Nichole Michel Portfolio</title>
   </head>
   <body>
     <header>
+      <!--Nav Bar-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -49,37 +42,41 @@
     </header>
     <figure class="figure">
       <img src="../images/profilepic.JPG" class="figure-img img-fluid rounded" alt="profilepic">
+      <h1>Nichole Michel</h1>
       <figcaption class="figure-caption">With a background in psychology, I let empathy be the driving force
         behind my research and designs.</figcaption>
     </figure>
+  
     
       <div class="content">
         
         <button>Download Resume</button>
       </div>
     </section>
-    <!--  My UX Skills section coded using CSS flex -->
+    <!--  My UX Skills section -->
     <h1>My Skills</h1>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
+        <!--User Research-->
         <div class="col-sm research">
           <button class="research">User Research</button>
           <img src="../images/userresearch.jpg" style="width: 90%" />
 
         
-        <p>
+        <p class="skillsP">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
           voluptatibus totam? Tempore animi quam autem ipsam, quia soluta
           asperiores quas doloremque. Vero, quaerat ipsa ad corrupti nemo atque
           ea quasi!
         </p>
         </div>
+        <!--User Design-->
         <div class="col-sm design">
           <button class="design">User Design</button>
           <img src="../images/userdesign.jpg" style="width: 90%" />
 
         
-        <p>
+        <p class="skillsP">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
           architecto tempore numquam perferendis, eveniet voluptatem cupiditate,
           unde earum vero tenetur ex labore. Doloribus quaerat nostrum, ipsam
@@ -92,28 +89,36 @@
 
     
     
-    <!-- My Work Section Constructed using CSS Grid -->
-    <h1 class="myWork">My Work</h1>
-    <div class="card-deck">
-      <div class="card">
-        <img src="../images/lifeable.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Lifeable</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <!-- My Work Cards-->
+    
+    <div class="container-fluid sectionHeading">
+      <h1 class="myWork">My Work</h1>
+      <div class="card-deck">
+        <!--Card 1-->
+        <div class="card">
+          <img src="../images/lifeable2.png" class="card-img-top" alt="lifeable">
+          <div class="card-body">
+            <h5 class="card-title">Lifeable</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button>View Project</button>
+          </div>
+          
+        </div>
+        <!--Card 2-->
+        <div class="card">
+          <img src="../images/blindcat2.png" class="card-img-top " alt="blindcat">
+          <div class="card-body">
+            <h5 class="card-title">Blind Cat Rescue & Sanctuary</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.This content is a little bit longer.</p>
+            <button>View Project</button>
+          </div>
+          
         </div>
         
-      </div>
-      <div class="card">
-        <img src="../images/blindcat.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Blindcat Rescue & Sanctuary</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         </div>
-        
-      </div>
-      
       </div>
     </div>
+    
     
    
     
@@ -139,6 +144,7 @@
         </ul>
       </div>
     </nav>
+    <!--End of Footer-->
     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
     <script src='../js/index.js'></script>
   </body>
